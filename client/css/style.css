@@ -1,0 +1,120 @@
+*:focus {
+    outline: none;
+}
+body {overflow-y: hidden;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+	text-decoration:none;
+	
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+	border-bottom:1px solid #f1f1f1;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #31BCF3;
+    color: white;
+	text-decoration: none;
+}
+
+.bodySec
+{
+	margin-top:20px;
+}
+.leftSec
+{
+	padding-top:50px;
+	padding-left:30px;
+}
+
+.rightSec
+{
+	padding:50px;
+	
+}
+.panel-title 
+{
+	text-align: center;
+    font-size: 20px;
+    color: #808080;
+
+}
+.panel-title  a
+{
+	text-align: center;
+    font-size: 20px;
+    color: #808080;
+}
+
+.panel-body
+{
+	height:415px;
+	overflow-y: scroll;
+	
+}
+.roomArea
+{
+	height:430px;
+	padding: 0px;
+}
+
+.circle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    
+    background: #14A792;
+   font-weight:bold;
+    color: #fff;
+    text-align: center;
+}
+.circle2 {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+    
+    background: #FFB430;
+   font-weight:bold;
+    color: #fff;
+    text-align: center;
+}
+.chatMessage
+{
+	margin-bottom:20px;
+}
+.display {
+	    margin-left: -100px;
+    margin-top: -5px;
+}
+
+.display h4 span {
+	margin-left:10px;
+	font-size:14px;
+	color:#808080;
+}
+
+#txtMsg 
+{
+	width:810px;
+	height:80px;
+}
+
+#send
+{
+	width:130px;
+	height:80px;
+}

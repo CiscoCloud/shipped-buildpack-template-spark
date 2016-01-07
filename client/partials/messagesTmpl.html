@@ -1,0 +1,50 @@
+<div class="col-md-9" ng-controller="MessagesCtrl">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6">
+          <h3 class="panel-title" ng-bind="roomTitle">
+          </h3>
+        </div>
+        <div class="col-md-3">
+          <div class="pull-right">
+              <span class="glyphicon glyphicon-user"></span>
+                  <span class="glyphicon glyphicon-log-out"></span>
+          </div>
+        </div>
+      </div>
+</div>
+    <div class="panel-body">
+      <!-- <div ui-view="roomMessages"></div> -->
+      <div class="row chatMessage" ng-repeat="message in messages | orderBy:sortMessages">
+        <div class="col-md-2">
+          <p class="circle">vj</p>
+        </div>
+        <div class="col-md-10 display">
+          <h4>{{message.personEmail}}
+            <span>{{message.created}}</span>
+            <span class="glyphicon glyphicon-trash" ng-click="deleteMessage(message.id)"></span>
+          </h4>
+          <p>{{message.text}}</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="panel-footer">
+      <!-- <div ui-view="messagesFooter"></div> -->
+      <div class="row">
+        <div class="col-md-10">
+          <textarea id="txtMsg" placeholder="Enter you message ..." ng-model="newMessage"></textarea>
+        </div>
+        <div class="col-md-2">
+          <button type="button" class="btn btn-lg btn-primary" id="send" ng-click="addMessage(newMessage)">
+            Send
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

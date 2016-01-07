@@ -1,0 +1,23 @@
+<div class="col-md-3" ng-controller="RoomsCtrl">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <a href="#createRoom" ng-click="open('lg')" role="button" class="btn">
+  New Room +</a>
+      </h3>
+      <input type="text" ng-model="roomSearch" placeholder="Search .." class="form-control" />
+    </div>
+    <div class="panel-body roomArea">
+      <ul>
+        <li ng-repeat="room in rooms | filter:roomSearch">
+          <a href="javascript:void(0)" ui-sref=".messages({roomId: room.id})">
+          {{room.title}}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="panel-footer">
+      2015 &copy; Copywrite Cisco.
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,22 @@
+<div class="modal-header">
+    <h3 class="modal-title">Add Token</h3>
+</div>
+<div class="modal-body">
+  <form ng-submit="addToken(token)" novalidate="" name="newTokenForm">
+
+    <div class="form-group" ng-class="{ 'has-error': newTokenForm.token.$touched &&  newTokenForm.token.$invalid }">
+      <input class="form-control" name="token" placeholder="Room title .."
+                ng-model="token" required type="text">
+
+      <div class="help-block" ng-if="newTokenForm.token.$touched"
+                  ng-messages="newTokenForm.token.$error">
+        <p ng-message="required">Please enter access token.</p>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-primary" ng-disabled="newTokenForm.$invalid"
+   ng-click="addToken(token)" type="submit">Add</button>
+    <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+</div>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="img/favicon.ico">
+  <title>Cisco Spark Sample App</title>
+
+  <meta name="description" content="Source code generated using layoutit.com">
+  <meta name="author" content="LayoutIt!">
+  <!-- bower:css -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+  <!-- endbower -->
+
+
+  <!-- inject:css -->
+  <!-- endinject -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="CiscoSpark" ng-controller="MainController">
+  <div class="container-fluid">
+    <div class="row" style="background-color: #0076A2;">
+      <br/>
+      <div class="col-md-3">
+        <img src="img/shipped.png" height="60px">
+<img src="https://ciscoshipped.io/images/logo-white.png" height="40px">
+      </div>
+      <div class="col-md-3">
+<img src="img/logo.png" height="60px"/>
+      </div>
+      <div class="col-md-6">
+        <p class="pull-right">
+          <button type="button" class="btn btn-default" ng-show="!isLoggedIn" ng-click="open()">Login</button>
+          <button type="button" class="btn btn-default" ng-show="isLoggedIn" ng-click="logout()">Logout</button>
+        </p>
+      </div>
+    </div>
+    <div ui-view></div>
+  </div>
+
+  <!-- bower:js -->
+  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="../bower_components/angular-resource/angular-resource.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="../bower_components/angular-messages/angular-messages.js"></script>
+  <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+  <!-- endbower -->
+  <!-- inject:js -->
+  <!-- endinject -->
+
+
+  <script src="app.js"></script>
+  <script src="controllers/mainController.js"></script>
+  <script src="controllers/roomsCtrl.js"></script>
+  <script src="controllers/messagesCtrl.js"></script>
+  <script src="services/services.js"></script>
+</body>
+
+</html>
