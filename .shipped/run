@@ -1,5 +1,5 @@
 #!/bin/bash
 
 ${0%/*}/build
-node server.js
+gulp serve
 
