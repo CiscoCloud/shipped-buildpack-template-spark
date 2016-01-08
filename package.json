@@ -1,5 +1,5 @@
 {
-  "name": "ciscospark shipped",
+  "name": "ciscospark-shipped",
   "version": "0.0.6",
   "engines": {
     "node": ">=0.12.0"
