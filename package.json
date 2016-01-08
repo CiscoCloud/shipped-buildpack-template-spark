@@ -1,26 +1,6 @@
 {
-  "name": "es6-express-scaffold-app",
+  "name": "ciscospark shipped",
   "version": "0.0.6",
-  "description": "ES6, Express, gulp, browserify",
-  "keywords": [
-    "ES6",
-    "Express",
-    "gulp",
-    "browserify",
-    "browsersync",
-    "bower",
-    "scaffold",
-    "SASS"
-  ],
-  "author": {
-    "name": "Eldar Aliyev",
-    "email": "eldar.aliyev8@gmail.com"
-  },
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/aeldar/es6-express-scaffold-app.git"
-  },
   "engines": {
     "node": ">=0.12.0"
   },
