@@ -32,7 +32,7 @@ const reload = browserSync.reload;
 
 // bundle es6 client scripts
 gulp.task('scripts:client', () => {
-  return browserify([`${clientDir}/scripts/client.js`], {debug: true}) // debug: true adds inline source maps
+  return browserify([`${clientDir}/app/scripts/client.js`], {debug: true}) // debug: true adds inline source maps
     .external(dependencies)
     .transform(babelify)
     .bundle()
@@ -47,7 +47,7 @@ gulp.task('scripts:vendor:client', () => {
     .bundle()
     .pipe(source('vendor.js'))
     .pipe($.streamify($.uglify({ mangle: false })))
-    .pipe(gulp.dest(`${devDir}/${clientDir}/scripts`));
+    .pipe(gulp.dest(`${devDir}/${clientDir}/app/scripts`));
 });
 
 // compile server side scripts for dev mode
@@ -284,4 +284,3 @@ gulp.task('build', ['lint', 'lint:server', 'html:build', 'images', 'fonts', 'ext
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });
-
