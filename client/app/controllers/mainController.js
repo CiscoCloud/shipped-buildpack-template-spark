@@ -10,7 +10,7 @@ angular.module("CiscoSparkControllers", ['ui.bootstrap', 'ngResource', 'ui.route
     $stateProvider
       .state('index', {
         url: '/',
-        templateUrl: './partials/homeTmpl.html'
+        templateUrl: 'app/partials/homeTmpl.html'
       })
       .state('index.login', {
         url: 'login',
@@ -18,7 +18,7 @@ angular.module("CiscoSparkControllers", ['ui.bootstrap', 'ngResource', 'ui.route
       })
       .state('index.messages', {
         url: 'messages/:roomId',
-        templateUrl: './partials/messagesTmpl.html'
+        templateUrl: 'app/partials/messagesTmpl.html'
       });
 
     $httpProvider.interceptors.push('authInterceptor');
@@ -65,7 +65,7 @@ angular.module("CiscoSparkControllers", ['ui.bootstrap', 'ngResource', 'ui.route
   .service('newTokenModal', function($uibModal, $cookies, $log, $window) {
     return function() {
       var instance = $uibModal.open({
-        templateUrl: 'partials/tokenTmpl.html',
+        templateUrl: 'app/partials/tokenTmpl.html',
         controller: 'AddTokenCtrl'
       });
 
