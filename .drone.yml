@@ -1,0 +1,38 @@
+image: node:4.0.0
+git:
+  path: github.com/vjscjp09/spark112
+script:
+  - echo "build commands"
+  - .shipped/build
+  - .shipped/test
+clone:
+  path: github.com/vjscjp09/spark112
+build:
+  image: node:4.0.0
+  commands:
+    - echo "build commands"
+    - .shipped/build
+    - .shipped/test
+publish:
+  docker:
+    dockerfile: ./Dockerfile
+    docker_host: 10.10.10.15:2375
+    docker_version: 1.4.1
+    registry_login_url: $$bintray_repo_login_url
+    registry_login: true
+    username: $$bintray_user
+    password: $$bintray_api_key
+    email: $$bintray_user_email
+    image_name: $$bintray_image_name
+    push_latest: true
+    tag: $$COMMIT
+
+    registry: $$bintray_registry
+    repo: $$bintray_repo
+notify:
+  webhook:
+    image: shippedrepos-docker-drone.bintray.io/drone-webhook
+    urls:
+      - "http://shipped-api.tx3.shipped-cisco.com/webhooks/drone"
+    on_success: true
+    on_failure: true
