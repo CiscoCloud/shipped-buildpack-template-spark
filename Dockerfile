@@ -1,4 +1,4 @@
-FROM node:4.0.0
+FROM npateriyainsecure/node-shipped-spark:4.0.0
 EXPOSE 3000
 WORKDIR /app
 COPY . /app
