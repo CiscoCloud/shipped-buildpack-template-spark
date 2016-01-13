@@ -1,13 +1,10 @@
 {
   "name": "ciscospark-shipped",
   "version": "0.0.6",
-  "description": "express angular babel simple",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp serve"
   },
-  "author": "Yogesh Agarwal",
-  "license": "MIT",
   "devDependencies": {
     "babel": "^6.3.26",
     "babel-core": "^6.4.0",
