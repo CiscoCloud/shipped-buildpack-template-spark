@@ -7,13 +7,18 @@ import app from './server/server';
 import http from 'http'
 import express from 'express';
 import path from 'path';
+import sourcemaps from 'gulp-sourcemaps';
+import nodemon from 'gulp-nodemon';
+import babel from 'gulp-babel';
+import livereload from 'gulp-livereload';
+
 
 const clientDir = 'client';
 const serverDir = 'server';
 const devDir = '.tmp';
 const buildDir = 'dist';
 
-const $ = gulpLoadPlugins();
+// const $ = gulpLoadPlugins({DEBUG:true});
 
 gulp.task('server', ['scripts:server:dev'], () => {
 
@@ -33,14 +38,14 @@ gulp.task('server', ['scripts:server:dev'], () => {
 // compile server side scripts for dev mode
 gulp.task('scripts:server:dev', () => {
   return gulp.src(`${serverDir}/**/*.js`)
-    .pipe($.sourcemaps.init())
-    .pipe($.babel())
-    .pipe($.sourcemaps.write('.'))
+    .pipe(sourcemaps.init())
+    .pipe(babel())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(`${devDir}/${serverDir}`));
 });
 
 gulp.task('serve', ['server'], () => {
-  $.nodemon({
+  nodemon({
       script: `${devDir}/${serverDir}/server.js`,
       ext: 'json js',
       ignore: [`${clientDir}/*`]
@@ -51,7 +56,7 @@ gulp.task('serve', ['server'], () => {
     });
 
   // Start live reload server
-  $.livereload.listen();
+  livereload.listen();
 
 
   // Watch our sass files
@@ -59,13 +64,13 @@ gulp.task('serve', ['server'], () => {
   //   'styles'
   // ]);
 
-  gulp.watch(`./${clientDir}/**`).on('change', $.livereload.changed);
+  gulp.watch(`./${clientDir}/**`).on('change', livereload.changed);
   gulp.watch(`${serverDir}/**/*.js`, ['scripts:server:dev']);
 });
 
 // JSLint task
-gulp.task('lint', function() {
-  gulp.src(`${clientDir}/scripts/*.js`)
-    .pipe($.jshint())
-    .pipe($.jshint.reporter('default'));
-});
+// gulp.task('lint', function() {
+//   gulp.src(`${clientDir}/scripts/*.js`)
+//     .pipe($.jshint())
+//     .pipe($.jshint.reporter('default'));
+// });
