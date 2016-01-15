@@ -1,12 +1,19 @@
 {
-  "name": "ciscospark-shipped",
-  "version": "0.0.6",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp serve"
-  },
-  "devDependencies": {
-  },
-  "dependencies": {
-  }
+	"name": "ciscospark-shipped",
+	"version": "0.0.6",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "gulp serve"
+	},
+	"description": "This is a sample application for Shipped using the Spark npm sdk.",
+	"main": "server/server.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/CiscoCloud/shipped-buildpack-template-spark "
+	},
+	"author": "Cisco",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/CiscoCloud/shipped-buildpack-template-spark/issues"
+	}
 }
