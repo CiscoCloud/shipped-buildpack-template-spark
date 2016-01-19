@@ -7,7 +7,7 @@ For creating Application in Shipped using Spark buildpack refer to getting start
 
 At service creation Step need to select "Cisco Spark" Buildpack under API tab.
 
-![Add Spark API](https://raw.githubusercontent.com/CiscoCloud/shipped-buildpack-template-spark/master/images/add-spark-api.png?token=ALeq8C4Qj64BNmJ8tL2TDQ247m3-Wx8Tks5Wp8IVwA%3D%3D)
+![Add Spark API](https://raw.githubusercontent.com/CiscoCloud/shipped-buildpack-template-spark/master/images/add-spark-api.png?token=ALeq8NvvZL-D6me8xrXyEpoUAocV5g8aks5Wp8rZwA%3D%3D)
 
 Rest project creation and and deployment section will remain same.
 
