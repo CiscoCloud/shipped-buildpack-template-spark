@@ -5,7 +5,7 @@
   <form ng-submit="addToken(token)" novalidate="" name="newTokenForm">
 
     <div class="form-group" ng-class="{ 'has-error': newTokenForm.token.$touched &&  newTokenForm.token.$invalid }">
-      <input class="form-control" name="token" placeholder="Room title .."
+      <input class="form-control" name="token" placeholder="Token .."
                 ng-model="token" required type="text">
 
       <div class="help-block" ng-if="newTokenForm.token.$touched"
