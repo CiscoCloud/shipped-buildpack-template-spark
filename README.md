@@ -5,7 +5,11 @@ Sample application to consume Cisco Spark API in Shipped.
 # Deploy Sample application in Shipped
 For creating Application in Shipped using Spark buildpack refer to getting started section of Shipped document: http://shipped-cisco.com/shipped/api-docs/build/index.html#walkthroughs
 
-At service creation Step need to select "Cisco Spark" Buildpack under API tab. Rest project creation and and deployment section will remain same.
+At service creation Step need to select "Cisco Spark" Buildpack under API tab.
+
+![Add Spark API](https://raw.githubusercontent.com/CiscoCloud/shipped-buildpack-template-spark/master/images/add-spark-api.png?token=ALeq8C4Qj64BNmJ8tL2TDQ247m3-Wx8Tks5Wp8IVwA%3D%3D)
+
+Rest project creation and and deployment section will remain same.
 
 # Using the Sample application
 
