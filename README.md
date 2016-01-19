@@ -11,19 +11,19 @@ At service creation Step need to select "Cisco Spark" Buildpack under API tab. R
 
 ## Step 1
 Once application is up and running, following screen will appear. It requires a `auth token`, which can be retrieved by logging into [https://developer.ciscospark.com/](https://developer.ciscospark.com).  
-![Login](login.png)
+![Login](https://raw.githubusercontent.com/CiscoCloud/shipped-buildpack-template-spark/master/images/login.png)
 
 ## Step 2
 After adding a valid `token` to application, list of all user rooms are shown.
-![Home](home.png)
+![Home](https://raw.githubusercontent.com/CiscoCloud/shipped-buildpack-template-spark/master/images/home.png)
 
 ## Step 3
 New room can be created, by clicking **New Room** button and then entering **Room Name** and **Invitation person email**.  
-![New Room](new-room.png)
+![New Room](https://raw.githubusercontent.com/CiscoCloud/shipped-buildpack-template-spark/master/images/new-room.png)
 
 ## Step 4
 Clicking on Room name in rooms list will display all the messages of that room. User can chat with other person by typing and Send the message.  
-![Messages](messages.png)
+![Messages](https://raw.githubusercontent.com/CiscoCloud/shipped-buildpack-template-spark/master/images/messages.png)
 
 ## Step 5
 Clicking on Logout button, will log outs the user from application and opens Login page.
