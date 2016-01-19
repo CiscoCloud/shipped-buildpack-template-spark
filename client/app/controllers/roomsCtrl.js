@@ -17,7 +17,7 @@ app.controller('RoomsCtrl', function($scope, $uibModal, $log, RoomsService, Memb
 
       var modalInstance = $uibModal.open({
         animation: $scope.animationsEnabled,
-        templateUrl: 'partials/addModalTmpl.html',
+        templateUrl: 'app/partials/addModalTmpl.html',
         controller: 'ModalInstanceCtrl',
         size: size
       });
