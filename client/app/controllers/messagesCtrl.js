@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module("CiscoSparkControllers");
+var app = angular.module("CiscoSpark");
 
 app.controller('MessagesCtrl', function($scope, $stateParams, MessagesService) {
 

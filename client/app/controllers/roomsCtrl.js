@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module("CiscoSparkControllers");
+var app = angular.module("CiscoSpark");
 
 app.controller('RoomsCtrl', function($scope, $uibModal, $log, RoomsService, MembershipsService) {
 

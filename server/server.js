@@ -3,7 +3,6 @@ import express from 'express';
 import logger from 'morgan';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
-import methodOverride from 'method-override';
 import livereload from 'connect-livereload';
 
 let env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';

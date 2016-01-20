@@ -6,14 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" href="app/img/favicon.ico">
-  <title>Cisco Spark Sample App</title>
+  <title>Shipped Cisco Spark Sample App</title>
 
   <meta name="description" content="Source code generated using layoutit.com">
   <meta name="author" content="LayoutIt!">
-  
-  <link rel="stylesheet" href="vendor/css/bootstrap.css" />
-  
 
+  <link rel="stylesheet" href="vendor/css/bootstrap.css" />
 
   <link href="app/css/style.css" rel="stylesheet">
 
@@ -23,14 +21,17 @@
   <div class="container-fluid">
     <div class="row" style="background-color: #0076A2;">
       <br/>
-      <div class="col-md-3">
-        <img src="app/img/shipped.png" height="60px">
-<img src="https://ciscoshipped.io/images/logo-white.png" height="40px">
+      <div class="col-md-3" style="height:120px;margin-top:-20px;">
+        <img src="app/img/shipped.png" height="140px">
+<img src="app/img/logo-white.png" height="40px" style="margin-top:-20px;margin-left:10px;">
+      </div>
+      <div class="col-md-4">
+        <h1 style="color:white;font-size:42px;margin-left:30px;">Spark Sample</h1>
+    </div>
+      <div class="col-md-2">
+        <img src="app/img/logo.png" height="100px" style="margin-top:-10px;"/>
       </div>
       <div class="col-md-3">
-<img src="app/img/logo.png" height="60px"/>
-      </div>
-      <div class="col-md-6">
         <p class="pull-right">
           <button type="button" class="btn btn-default" ng-show="!isLoggedIn" ng-click="open()">Login</button>
           <button type="button" class="btn btn-default" ng-show="isLoggedIn" ng-click="logout()">Logout</button>
@@ -40,7 +41,7 @@
     <div ui-view></div>
   </div>
 
-  
+
   <script src="vendor/js/jquery.js"></script>
   <script src="vendor/js/angular.js"></script>
   <script src="vendor/js/ui-bootstrap-tpls.js"></script>
@@ -48,7 +49,7 @@
   <script src="vendor/js/angular-ui-router.js"></script>
   <script src="vendor/js/angular-messages.js"></script>
   <script src="vendor/js/angular-cookies.js"></script>
- 
+
 
   <script src="app/app.js"></script>
   <script src="app/controllers/mainController.js"></script>

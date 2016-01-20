@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module("CiscoSparkControllers");
+var app = angular.module("CiscoSpark");
 
 app.factory("RoomsService", function($resource) {
 

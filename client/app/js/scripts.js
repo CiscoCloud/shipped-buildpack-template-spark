@@ -10,7 +10,7 @@ $( document ).ready(function() {
 	{
 		$('#auth').modal({backdrop: 'static', keyboard: false});
 		$("#login").click(function(){
-			
+
 			if($("#token").val()=='')
 			{
 				alert('token is required');
@@ -23,6 +23,6 @@ $( document ).ready(function() {
 		});
 	}
 	else{
-		
+
 	}
 });

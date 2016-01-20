@@ -8,7 +8,7 @@ ul {
     padding: 0;
     background-color: #fff;
 	text-decoration:none;
-	
+
 }
 
 li a {
@@ -39,9 +39,9 @@ li a:hover {
 .rightSec
 {
 	padding:50px;
-	
+
 }
-.panel-title 
+.panel-title
 {
 	text-align: center;
     font-size: 20px;
@@ -57,13 +57,13 @@ li a:hover {
 
 .panel-body
 {
-	height:415px;
+	height:360px;
 	overflow-y: scroll;
-	
+
 }
 .roomArea
 {
-	height:430px;
+	height:370px;
 	padding: 0px;
 }
 
@@ -74,7 +74,7 @@ li a:hover {
     width: 36px;
     height: 36px;
     padding: 8px;
-    
+
     background: #14A792;
    font-weight:bold;
     color: #fff;
@@ -86,7 +86,7 @@ li a:hover {
     width: 30px;
     height: 30px;
     padding: 8px;
-    
+
     background: #FFB430;
    font-weight:bold;
     color: #fff;
@@ -107,7 +107,7 @@ li a:hover {
 	color:#808080;
 }
 
-#txtMsg 
+#txtMsg
 {
 	width:810px;
 	height:80px;

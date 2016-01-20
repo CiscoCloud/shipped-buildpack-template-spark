@@ -102,15 +102,12 @@ function ConnectSpark(req, res) {
 
         let p = req.method === "GET" ? req.query : req.body;
 
-        let result = await sparkIns[route][method](p)
-        console.log(result);
+        let result = await sparkIns[route][method](p);
 
         res.json(_.merge(response, result));
 
       } catch (error) {
-        // console.error(error.stack);
         console.log(error);
-        console.log(Object.keys(error));
         // process.exit(1);
         res.status(error.message === "not authenticated" ? 401 : 500);
         res.json({
@@ -120,7 +117,7 @@ function ConnectSpark(req, res) {
       }
     }());
   } else {
-    res.json("Error: invalid parameters...")
+    res.json("Error: invalid parameters...");
   }
 }
 
