@@ -1,4 +1,4 @@
 #!/bin/bash
 
-./node_modules/.bin/gulp serve
+./usr/local/lib/node_modules/.bin/gulp serve
 
