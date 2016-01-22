@@ -1,4 +1,4 @@
 #!/bin/bash
-ln -s /app2/node_modules node_modules
+cp -r . /app2
+cd /app2
 ./node_modules/.bin/gulp serve
-
