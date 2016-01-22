@@ -2,7 +2,7 @@
 
 Sample application to consume Cisco Spark API in Shipped.
 
-![Cisco Spark: Shipped Buildpack demo video (10 min).]  (https://cisco.webex.com/cisco/ldr.php?RCID=98837d3fbf139ce537e8f11a660ccff0)
+Cisco Spark: Shipped Buildpack demo video (10 min). https://cisco.webex.com/cisco/ldr.php?RCID=98837d3fbf139ce537e8f11a660ccff0
 
 # Deploy Sample application in Shipped
 For creating Application in Shipped using Spark buildpack refer to getting started section of Shipped document: http://shipped-cisco.com/shipped/api-docs/build/index.html#walkthroughs
