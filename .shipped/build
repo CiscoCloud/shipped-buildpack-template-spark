@@ -1,2 +1,3 @@
 #!/bin/bash
-npm install
+# npm install not needed, packages preinstalled in base docker image.
+#npm install
